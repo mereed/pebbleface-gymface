@@ -1,0 +1,417 @@
+{
+    "author": "chops",
+    "dependencies": {
+        "pebble-clay": "^1.0.2"
+    },
+    "keywords": [],
+    "name": "gymface",
+    "pebble": {
+        "capabilities": [
+            "configurable",
+            "health"
+        ],
+        "displayName": "GymFace",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "invert",
+            "bluetoothvibe",
+            "hourlyvibe",
+            "heart"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/batt-7.png",
+                    "name": "IMAGE_NUM_7",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/gym-bg.png",
+                    "name": "IMAGE_BG",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/pink-heart-icon.png",
+                    "name": "IMAGE_HEART",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/sleep-zzz.png",
+                    "name": "IMAGE_SLEEP",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/feet.png",
+                    "name": "IMAGE_FOOTPRINT",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/menu.png",
+                    "menuIcon": true,
+                    "name": "IMAGE_MENU_ICON",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt0.png",
+                    "name": "IMAGE_NUM_0",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/fire3a.png",
+                    "name": "IMAGE_BURN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/led-charging.png",
+                    "name": "IMAGE_BATT_CHARGING",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/10b.png",
+                    "name": "IMAGE_BATT_10",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/20b.png",
+                    "name": "IMAGE_BATT_20",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/30b.png",
+                    "name": "IMAGE_BATT_30",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/40b.png",
+                    "name": "IMAGE_BATT_40",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/50b.png",
+                    "name": "IMAGE_BATT_50",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/60b.png",
+                    "name": "IMAGE_BATT_60",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/90b.png",
+                    "name": "IMAGE_BATT_90",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/100.png",
+                    "name": "IMAGE_BATT_100",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/80b.png",
+                    "name": "IMAGE_BATT_80",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/70b.png",
+                    "name": "IMAGE_BATT_70",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/batt-8-dkblue.png",
+                    "name": "IMAGE_DARK8",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/BATT-FEB.png",
+                    "name": "IMAGE_MONTH_FEB",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/LED-24.png",
+                    "name": "IMAGE_24_HOUR_MODE",
+                    "type": "png"
+                },
+                {
+                    "file": "images/led-a.png",
+                    "name": "IMAGE_AM_MODE",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/led-p.png",
+                    "name": "IMAGE_PM_MODE",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/led-0sm.png",
+                    "name": "IMAGE_DATENUM_0",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/led-8sm.png",
+                    "name": "IMAGE_DATENUM_8",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/led-7sm.png",
+                    "name": "IMAGE_DATENUM_7",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/led-6sm.png",
+                    "name": "IMAGE_DATENUM_6",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/led-5sm.png",
+                    "name": "IMAGE_DATENUM_5",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/led-4sm.png",
+                    "name": "IMAGE_DATENUM_4",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/led-3sm.png",
+                    "name": "IMAGE_DATENUM_3",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/led-2sm.png",
+                    "name": "IMAGE_DATENUM_2",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/led-1SM.png",
+                    "name": "IMAGE_DATENUM_1",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/led-9sm.png",
+                    "name": "IMAGE_DATENUM_9",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-9.png",
+                    "name": "IMAGE_NUM_9",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-8.png",
+                    "name": "IMAGE_NUM_8",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-6.png",
+                    "name": "IMAGE_NUM_6",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-5.png",
+                    "name": "IMAGE_NUM_5",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-4.png",
+                    "name": "IMAGE_NUM_4",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-3.png",
+                    "name": "IMAGE_NUM_3",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-2.png",
+                    "name": "IMAGE_NUM_2",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-1.png",
+                    "name": "IMAGE_NUM_1",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-sat.png",
+                    "name": "IMAGE_DAY_NAME_SAT",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-fri.png",
+                    "name": "IMAGE_DAY_NAME_FRI",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-thu.png",
+                    "name": "IMAGE_DAY_NAME_THU",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-wed.png",
+                    "name": "IMAGE_DAY_NAME_WED",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-tue.png",
+                    "name": "IMAGE_DAY_NAME_TUE",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-mon.png",
+                    "name": "IMAGE_DAY_NAME_MON",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/BATT-DEC.png",
+                    "name": "IMAGE_MONTH_DEC",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/BATT-NOV.png",
+                    "name": "IMAGE_MONTH_NOV",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/BATT-OCT.png",
+                    "name": "IMAGE_MONTH_OCT",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/BATT-SEP.png",
+                    "name": "IMAGE_MONTH_SEP",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/BATT-AUG.png",
+                    "name": "IMAGE_MONTH_AUG",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/BATT-JUL.png",
+                    "name": "IMAGE_MONTH_JUL",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/BATT-JUN.png",
+                    "name": "IMAGE_MONTH_JUN",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/BATT-MAY.png",
+                    "name": "IMAGE_MONTH_MAY",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/BATT-APR.png",
+                    "name": "IMAGE_MONTH_APR",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/BATT-MAR.png",
+                    "name": "IMAGE_MONTH_MAR",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/BATT-JAN.png",
+                    "name": "IMAGE_MONTH_JAN",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-colon.png",
+                    "name": "IMAGE_SEPARATOR",
+                    "type": "png"
+                },
+                {
+                    "file": "images/batt-sun.png",
+                    "name": "IMAGE_DAY_NAME_SUN",
+                    "targetPlatforms": null,
+                    "type": "png"
+                },
+                {
+                    "file": "fonts/Roboto-Condensed.ttf",
+                    "name": "FONT_ROBOTOCONDENSED_20",
+                    "targetPlatforms": null,
+                    "trackingAdjust": -1,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/Roboto-Condensed.ttf",
+                    "name": "FONT_ROBOTOCONDENSED_14",
+                    "targetPlatforms": null,
+                    "trackingAdjust": -1,
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "basalt",
+            "chalk",
+            "diorite"
+        ],
+        "uuid": "0e5af9c1-867b-4d4e-bc69-7e9a8cdc59c2",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "2.0.0"
+}
